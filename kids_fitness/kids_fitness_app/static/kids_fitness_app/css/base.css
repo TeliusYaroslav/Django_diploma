@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    background-color:#D2E4EC;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#bottom-info {
+    border-left: 3px solid #074195;
+}
+
+hr {
+    height: 1px;
+    background-color: #000000;
+    border: none;
+}
+
+.sidebar {
+    width: 250px;
+    background-color:#33FFBD; 
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: rgb(0, 0, 0);
+}
+
+.user-info {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info p {
+    margin: 5px 0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.user-info p span {
+    font-weight: 400;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: 'KyivTypeSherif';
+    src: url('path_to_your_font/KyivTypeSherif.woff2') format('woff2'),
+         url('path_to_your_font/KyivTypeSherif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav {
+    border-top: 1px solid #212833;
+    border-bottom: 1px solid #212833;
+}
+
+.nav-link.custom-link {
+    color: #007bff;
+    font-size: 1.2em;
+    padding: 10px 0;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    font-family: 'KyivTypeSherif', serif;
+}
+
+.nav-link.custom-link:hover {
+    background-color: #ffffff;
+    color: #007bff;
+    border-left: 3px solid #0B5ED7;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link.custom-link.active {
+    color: rgb(0, 0, 0);
+}
+
+.nav-link.custom-link.active:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-left: 3px solid #0B5ED7;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+.btn-custom:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.text-center a {
+    color: rgb(255, 255, 255);
+}
+
+.home-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.home-button h1 {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.home-button:hover h1 {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.image-links {
+    margin-top: auto;
+}
+
+.image-link {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}

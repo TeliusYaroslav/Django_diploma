@@ -1,0 +1,82 @@
+{% extends 'kids_fitness_app/base.html' %}
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'kids_fitness_app/css/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="content-wrapper">
+        <h1 class="text-center my-4">КОНТАКТИ</h1>
+        <div id="map">
+            <a href="http://surl.li/uktfh" target="_blank">
+                <img src="{% static 'kids_fitness_app/img/GoogleMap.png' %}" style="height: 100; width: 400;" alt="Clickable Image">
+            </a>
+        </div>
+        <div class="address mt-4">
+            <p>КДЦ Дніпропресс вул. Василя Сліпака 35</p>
+        </div>
+        
+        <hr>
+        <div class="schedule mt-4">
+            <h5 class="mx-4">Графік тренувань:</h5>
+            <div class="schedule-grid mx-5">
+                <div class="frame">
+                    <p class="times">Пн, ср, пт:</p>
+                    <div class="times">
+                        <p>15:00</p>
+                        <p>16:00</p>
+                        <p>17:15</p>
+                    </div>
+                </div>
+                <div class="frame mt-4">
+                    <p class="times">Вт, чт:</p>
+                    <div class="times">
+                        <p>16:00</p>
+                        <p>17:15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="schedule mt-4">
+            <h5 class="mx-4">Ціни на заняття:</h5>
+            <div class="schedule-grid mx-5">
+                <div class="frame">
+                    <div class="times">
+                        <p class="times">Групові: 1000грн місяць</p>
+                        <p class="times">Разове: 150грн заняття</p>
+                        <p class="times">Індивідуальні: 400грн заняття</п>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="contact-form mt-4">
+            <h5 class="mx-4 text-center">Форма зворотного зв'язку</h5>
+            <form>
+                <div class="form-group">
+                    <label for="name">Прізвище та Ім`я</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="text" id="phone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Пошта</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="message">Повідомлення</label>
+                    <textarea id="message" class="form-control"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-outline-primary">ВІДПРАВИТИ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
