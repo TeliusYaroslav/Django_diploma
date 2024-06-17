@@ -36,3 +36,11 @@ h1 {
     padding: 0;
     padding-left: 1px;
 }
+
+.image-link{
+    margin: 0px;
+}
+
+.image-links{
+    gap: 20px;
+}
