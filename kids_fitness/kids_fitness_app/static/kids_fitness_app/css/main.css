@@ -1,12 +1,46 @@
-.carousel-caption {
-    position: absolute;
-    top: 0;
+.caption-link {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 10px 0;
+}
+
+.caption-block{
+    position: absolute;
+    top: 10px;
+    left: 5%;
+}
+
+.caption-buttons{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.caption-images{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.card{
+    height: 55%;
+    width: 55%;
+    opacity: 50%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text{
+    color: black;
+    font-size: 36px;
 }
 
 .caption-bg {
@@ -19,28 +53,21 @@
     text-align: center;
 }
 
-@keyframes blink {
-    0%, 49% {
-        opacity: 1;
-    }
-    50%, 100% {
-        opacity: 0.5;
-    }
-}
 
-h1 {
-    color: white;
+#text{
+    opacity: 100%;
 }
 
 .content {
     padding: 0;
-    padding-left: 1px;
 }
 
 .image-link{
     margin: 0px;
+    width: 75px;
+    height: 75px;
 }
 
 .image-links{
-    gap: 20px;
+    gap: 30px;
 }

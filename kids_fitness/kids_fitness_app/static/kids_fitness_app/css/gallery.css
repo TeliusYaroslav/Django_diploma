@@ -2,6 +2,12 @@
     max-width: 100%;
 }
 
+.content {
+    background-image: url('../img/galery.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -10,8 +16,8 @@
 }
 
 .fixed-size {
-    width: 225px; 
-    height: 150px; 
+    width: 550px; 
+    height: 300px; 
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

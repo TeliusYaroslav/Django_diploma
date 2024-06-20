@@ -6,6 +6,12 @@ from django.contrib.auth.models import User
 def main(request):
     return render(request, 'kids_fitness_app/main.html')
 
+def service(request):
+    return render(request, 'kids_fitness_app/service.html')
+
+def sign_up(request):
+    return render(request, 'kids_fitness_app/sign_up.html')
+
 def about_us(request):
     return render(request, 'kids_fitness_app/about_us.html')
 

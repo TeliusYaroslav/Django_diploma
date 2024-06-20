@@ -7,53 +7,66 @@
     <title>Kids Fitness</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'kids_fitness_app/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'kids_fitness_app/css/base_buttons.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
     {% block links %}
     {% endblock %}
 </head>
 <body>
     <div class="sidebar">
-        <div class="user-info d-flex align-items-center justify-content-center w-100">
-            <img src="{% static 'kids_fitness_app/img/Avatar.png' %}" alt="User Logo" class="rounded-circle mr-3">
-            {% if user.is_authenticated %}
-                <p class="m-0 ml-1"><span>{{ user.username }}</span></p>
-            {% else %}
-                <a href="{% url 'register' %}" class="m-0 ml-1">Ввійти/ Зареєструватись</a>
-            {% endif %}
+        <div class="logo">
+            <img src="{% static 'kids_fitness_app/img/Group 26.png' %}" alt="Kids Fitness Logo">
         </div>
-        <div class="text-center my-4">
-            <a href="{% url 'main' %}" title="На головну" class="home-button">
-                <h1 style='font-size: 36px;'>Kids fitness</h1>
-            </a>
+        <div class="nav flex-column py-3">
+            <li class="nav-item button" id="square1" onclick="location.href='#';">
+                <a href="{% url 'main' %}">
+                    <div class="circle" id="circle1">1</div>
+                    | Головна
+                </a>
+            </li>
+            <li class="nav-item button" id="square2" onclick="location.href='#';">
+                <a href="{% url 'gallery' %}">
+                    <div class="circle" id="circle2">2</div>
+                    | Галерея
+                </a>
+            </li>
+            <li class="nav-item button" id="square3" onclick="location.href='#';">
+                <a href="{% url 'service' %}">
+                    <div class="circle" id="circle3">3</div>
+                    | Послуги
+                </a>
+            </li>
+            <li class="nav-item button" id="square4" onclick="location.href='#';">
+                <a href="{% url 'about_us' %}">
+                    <div class="circle" id="circle4">4</div>
+                    | Про нас
+                </a>
+            </li>
+            <li class="nav-item button" id="square5" onclick="location.href='#';">
+                <a href="{% url 'contacts' %}">
+                    <div class="circle" id="circle5">5</div>
+                    | Контакти
+                </a>
+            </li>
+            <li class="nav-item mt-4 button" id="square6" onclick="location.href='#';">
+                <a href="{% url 'sign_up' %}">
+                    <div class="circle" id="circle6">!</div>
+                    | Запис
+                </a>
+            </li>
         </div>
-        <nav class="nav flex-column text-center">
-            <a class="nav-link custom-link {% if request.path == '/about/' %}active{% endif %}" href="{% url 'about_us' %}">ПРО НАС</a>
-            <a class="nav-link custom-link {% if request.path == '/gallery/' %}active{% endif %}" href="{% url 'gallery' %}">ГАЛЕРЕЯ</a>
-            <a class="nav-link custom-link {% if request.path == '/contacts/' %}active{% endif %}" href="{% url 'contacts' %}">КОНТАКТИ</a>
-        </nav>
-        <a class="btn btn-custom" href="{% url 'contacts' %}" style="width: 150px;">ЗАПИСАТИСЯ</a>
-        <hr>
-        <div id="bottom-info" class="container d-flex flex-column align-items-center">
-            <div class="mt-4 text-center">
-                <p>ТРЕНЕР:</p>
-                <p>НОМЕР ТЕЛЕФОНУ<br>+38 (066) 088 78 92</p>
-                <p>ТЕЛЕГРАМ<br>@AnastasiiaRyemyen</p>
-                <a href="{% url 'contacts' %}" style="color: #074195; text-decoration: underline; text-decoration-color: #074195;">ГРАФІК РОБОТИ</a>
-            </div>
-            <div class="text-center mt-auto mb-4">
-                <br>
-                {% if user.is_authenticated %}
-                    <a href="{% url 'logout' %}" class="nav-link">Выход</a>
-                {% else %}
-                    <a href="#" class="nav-link" data-toggle="modal" data-target="#loginModal">Вход</a>
-                {% endif %}
-            </div>
+        <div class="contact-info">
+            <p>ТРЕНЕР:</p>
+            <p><a href="tel:+380660827892">+38 (066) 082 78 92</a></p>
+            <p>ТЕЛЕГРАМ:</p>
+            <p><a href="https://t.me/AnastasiiaRyemyen">@AnastasiiaRyemyen</a></p>
+            <p><a href="{% url 'login' %}">Вхід</a> | <a href="{% url 'register' %}">Реєстрація</a></p>
         </div>
     </div>
-    
-        
-    </div>
-    
+
     <div class="content">
         {% block content %}
         {% endblock %}
