@@ -6,9 +6,9 @@
 
 {% block content %}
 <img src="{% static 'kids_fitness_app/img/aboutus.png' %}" alt="" class="bg-image">
-<div class="container main-container">
+
 <div class="row">
-    <div class="col-8">
+    <div class="col-xl-8 col-12">
         <div class="card card-1">
             <img src="{% static 'kids_fitness_app/img/aboutusimg.png' %}" class="card-img-top" alt="aboutusimg">
             <div class="card-body">
@@ -16,37 +16,48 @@
             </div>
         </div>
     </div>
-    <div class="col-4">
-        <div class="card" style="width: 18rem;">
+    <div class="col-xl-4 col-12 col-cards">
+        <div class="card cards card-2">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <p class="card-text">Групові тренування: <br>
+                • Дитячий фітнес для вікових груп 4-8 років та 2-3 роки. <br>
+                • ЛФК (лікувальна фізкультура). <br>
+                • ЗФП (загально фізична підготовка).</p>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
+          <div class="card cards card-3">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <p class="card-text">Індивідуальні тренування: <br>
+                • Сенсорна інтеграція. <br>
+                • Мозочкова стимуляція. <br>
+                • Робота з затримкою мовного та фізичного розвитку. <br>
+                • Загально фізична підготовка. <br>
+                • Лікувальна фізкультура. <br>
+                • Корекція сколіотичної осанки, вальгусу та плоскостопості.</p>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
+          <div class="card cards card-4">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <p class="card-text">Ми часто формуємо сезонні акції, щоб зробити наші послуги ще доступнішими: <br>
+                • Перше відвідування – БЕЗКОШТОВНЕ. <br>
+                • Приведи друга та отримай знижку 50% на місячне відвідування.</p>
             </div>
           </div>
     </div>
 </div>
-</div>
-
+          <div class="carousel-caption caption-link d-none d-md-flex align-items-end justify-content-center">
+                <div class="image-links d-flex justify-content-around mt-4">
+                    <a href="https://www.facebook.com/groups/159212643825421/?_rdr" target="_blank">
+                        <img src="{% static 'kids_fitness_app/img/facebook.png' %}" alt="facebook" class="image-link">
+                    </a>
+                    <a href="https://www.instagram.com/kids_fitness_dnipro/" target="_blank">
+                        <img src="{% static 'kids_fitness_app/img/inst.png' %}" alt="instagram" class="image-link">
+                    </a>
+                    <a href="https://t.me/AnastasiiaRyemyen" target="_blank">
+                        <img src="{% static 'kids_fitness_app/img/tg.png' %}" alt="telegram" class="image-link">
+                    </a>
+                </div>
+              </div>
+        </div>
 
 {% endblock %}
