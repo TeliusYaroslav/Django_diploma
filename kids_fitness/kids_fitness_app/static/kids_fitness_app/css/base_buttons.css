@@ -1,3 +1,50 @@
+.nav a {
+    -webkit-text-fill-color: #FFC7B0;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 10px;
+    position: relative; 
+}
+
+.sidebar .nav-item a .circle {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    position: absolute; 
+    left: -40px;
+}
+
+.sidebar .nav-item a {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    font-size: 40px;
+}
+
+.sidebar .nav-item.mt-3 {
+    margin-top: 30px;
+}
+
+.button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10%;
+    border-radius: 25px;
+    background-color: #D7E8F7; 
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    width: 102%;
+    z-index: 10; 
+    cursor: pointer;
+}
+
 #square1 {
     background-color: #D0EEFF;
 }
@@ -69,3 +116,17 @@
 #circle6 {
     background-color: #FCDB2B;
 }
+
+.circle p{
+    font-family: "Leckerli One", cursive;
+    font-weight: 400;
+    color: white;
+}
+
+
+.leckerli-one-regular {
+    font-family: "Leckerli One", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

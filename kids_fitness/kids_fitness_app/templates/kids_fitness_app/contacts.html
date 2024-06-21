@@ -6,77 +6,65 @@
 {% endblock %}
 
 {% block content %}
-    <div class="content-wrapper">
-        <h1 class="text-center my-4">КОНТАКТИ</h1>
-        <div id="map">
-            <a href="http://surl.li/uktfh" target="_blank">
-                <img src="{% static 'kids_fitness_app/img/GoogleMap.png' %}" style="height: 100; width: 400;" alt="Clickable Image">
-            </a>
+    <div class="content-wrapper row mt-5">
+        <div class="contact-information col">
+            <h1 class="text-center my-4 bold" id="contact-label">НАШI КОНТАКТИ</h1>
+            <div class="contact-text my-4">
+                <p>Задати питання:</p>
+                <p><a href="tel:+380660827892">+38 (066) 082 78 92</a></p>
+                <p>або Телеграм:</p>
+                <p><a href="https://t.me/AnastasiiaRyemyen">@AnastasiiaRyemyen</a></p>
+                <p>або Direct:</p>
+                <p><a href="https://www.instagram.com/anastasiia.tkachuk800/">@anastasiia.tkachuk800</a></p>
+            </div>
+            <div class="contact-address   my-4">
+                <p>Адреса:</p>
+                <p>КДЦ Дніпропресс вул. Василя Сліпака 35</p>
+                <a href="https://maps.app.goo.gl/uar6cVTpMEDXqBCUA" target="_blank">
+                    <img src="{% static 'kids_fitness_app/img/GoogleMap.png' %}" style="width: 650px; border: 2px solid black; border-radius: 15px;" alt="Clickable Image">
+                </a>
+            </div>
         </div>
-        <div class="address mt-4">
-            <p>КДЦ Дніпропресс вул. Василя Сліпака 35</p>
+
+        <div class="contact-information col">
+            <div class="schedule">
+                <h5 class="mx-4 bold" id="contact-shedule">Графік тренувань:</h5>
+                <div class="schedule-grid mx-5">
+                    <img src="{% static 'kids_fitness_app/img/clock.png' %}" alt="Clock" class="clock-img">
+                    <div class="time row">
+                        <div class="time-main1 col">
+                            <p class="time-days1  ">Пн, ср, пт:</p>
+                            <div class="time-time1">
+                                <p>15:00</p>
+                                <p>16:00</p>
+                                <p>17:15</p>
+                            </div>
+                        </div>
+                        <div class="time-main2 col ">
+                            <p class="time-days2  ">Вт, чт:</p>
+                            <div class="time-time2">
+                                <p>16:00</p>
+                                <p>17:15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </div>
+
+    </div>
+
         
-        <hr>
-        <div class="schedule mt-4">
-            <h5 class="mx-4">Графік тренувань:</h5>
-            <div class="schedule-grid mx-5">
-                <div class="frame">
-                    <p class="times">Пн, ср, пт:</p>
-                    <div class="times">
-                        <p>15:00</p>
-                        <p>16:00</p>
-                        <p>17:15</p>
-                    </div>
-                </div>
-                <div class="frame mt-4">
-                    <p class="times">Вт, чт:</p>
-                    <div class="times">
-                        <p>16:00</p>
-                        <p>17:15</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
 
-        <div class="schedule mt-4">
-            <h5 class="mx-4">Ціни на заняття:</h5>
-            <div class="schedule-grid mx-5">
-                <div class="frame">
-                    <div class="times">
-                        <p class="times">Групові: 1000грн місяць</p>
-                        <p class="times">Разове: 150грн заняття</p>
-                        <p class="times">Індивідуальні: 400грн заняття</п>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-
-        <div class="contact-form mt-4">
-            <h5 class="mx-4 text-center">Форма зворотного зв'язку</h5>
-            <form>
-                <div class="form-group">
-                    <label for="name">Прізвище та Ім`я</label>
-                    <input type="text" id="name" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Телефон</label>
-                    <input type="text" id="phone" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="email">Пошта</label>
-                    <input type="email" id="email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="message">Повідомлення</label>
-                    <textarea id="message" class="form-control"></textarea>
-                </div>
-                <div class="text-center">
-                    <button type="button" class="btn btn-outline-primary">ВІДПРАВИТИ</button>
-                </div>
-            </form>
-        </div>
+    <div class="image-links d-flex justify-content-center">
+        <a href="https://www.facebook.com/groups/159212643825421/?_rdr" target="_blank">
+            <img src="{% static 'kids_fitness_app/img/facebook.png' %}" alt="facebook" class="image-link">
+        </a>
+        <a href="https://www.instagram.com/kids_fitness_dnipro/" target="_blank">
+            <img src="{% static 'kids_fitness_app/img/inst.png' %}" alt="instagram" class="image-link">
+        </a>
+        <a href="https://t.me/AnastasiiaRyemyen" target="_blank">
+            <img src="{% static 'kids_fitness_app/img/tg.png' %}" alt="telegram" class="image-link">
+        </a>
     </div>
 {% endblock %}
