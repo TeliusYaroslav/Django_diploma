@@ -2,15 +2,9 @@
     padding: 0;
 }
 
-.main-container{
-    height: 100%;
-    position: absolute;
-    right: 10px;
-}
-
 
 .bg-image {
-    position: absolute;
+    position: fixed;
     width: 80%;
     height: 100%;
     object-fit: cover;
@@ -19,5 +13,66 @@
 
 .card-1{
     width: 100%;
-    font-size: 48px;
+    font-size: 46px;
+    margin-top: 2%;
+    margin-left: 4%;
 }
+
+.cards{
+    margin-top: 4%;
+    margin-left: 8%;
+}
+
+.col-cards{
+    padding: 0;
+}
+
+.row{
+    width: 100%;
+}
+
+.card-2{
+    font-size: 29px;
+}
+
+.card-3{
+    font-size: 29.5px;
+}
+
+.card-4{
+    
+    font-size: 29px;
+}
+
+.cards .card-body{
+    padding: 4%;
+    
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+}
+
+
+
+
+
+
+.image-link{
+    margin: 0px;
+    width: 75px;
+    height: 75px;
+}
+
+.image-links{
+    gap: 30px;
+}
+
+
+
+.caption-link {
+    position: fixed;
+    top:0;
+}
+
