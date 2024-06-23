@@ -22,8 +22,12 @@
 .sidebar .nav-item a {
     display: flex;
     align-items: center;
-    padding-left: 40px;
-    font-size: 40px;
+    padding-left: 0px;
+
+}
+
+span{
+    font-size:calc(20px + 8 * (100vw - 320px) / 880);
 }
 
 .sidebar .nav-item.mt-3 {
@@ -34,7 +38,7 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 1%;
     margin-left: 10%;
     border-radius: 25px;
     background-color: #D7E8F7; 
@@ -130,3 +134,51 @@
     font-style: normal;
   }
   
+  .sidebar .nav-item a .circle {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    position: absolute; 
+    left: -40px;
+}
+
+.sidebar .nav-item {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    font-size: 40px;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.sidebar .nav-item a {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    font-size: 40px;
+    text-decoration: none;
+    color: inherit; 
+}
+
+@media (max-width: 768px) {
+    .nav.flex-column {
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .nav-item {
+        padding: 0;
+        flex: 0 0 auto;
+        display: inline-block;
+    }
+    .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #000;
+        color: white;
+    }
+}

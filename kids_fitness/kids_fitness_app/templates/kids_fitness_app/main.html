@@ -41,7 +41,7 @@
         </div>
         <div class="carousel-item">
             <div class="caption-block carousel-caption d-flex d-md-block align-items-start ">
-                <div class="card" style="">
+                <div class="card">
                     <div class="card-body">
                       <p class="card-text" style="opacity: 100%; color: black;" id="text">Ми віримо, що кожна дитина заслуговує на можливість бути здоровою та активною. Наші тренери мають великий досвід роботи з дітьми різного віку та рівня підготовки. Ми створюємо атмосферу, де діти можуть розвиватися фізично, емоційно та соціально.
                         Приєднуйтесь до нас і дайте своїм дітям найкращі можливості для здорового та активного життя!</p>
@@ -72,7 +72,7 @@
         </div>
         <div class="carousel-item">
             <div class="caption-block carousel-caption d-flex d-md-block align-items-start ">
-                <div class="card" style="">
+                <div class="card">
                     <div class="card-body">
                       <p class="card-text" style="opacity: 100%; color: black;" id="text">Ми віримо, що кожна дитина заслуговує на можливість бути здоровою та активною. Наші тренери мають великий досвід роботи з дітьми різного віку та рівня підготовки. Ми створюємо атмосферу, де діти можуть розвиватися фізично, емоційно та соціально.
                         Приєднуйтесь до нас і дайте своїм дітям найкращі можливості для здорового та активного життя!</p>
@@ -117,5 +117,14 @@
             interval: 3500,
             ride: 'carousel'
         });
+    </script>
+
+    <script>
+  const myModal = document.getElementById('myModal')
+  const myInput = document.getElementById('myInput')
+
+  myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+  })
     </script>
 {% endblock %}

@@ -30,11 +30,6 @@ body {
     background-color: #C6DFF7; 
 }
 
-.button a {
-    font-size: 15%;
-    text-decoration: none; 
-    color: inherit;
-}
 
 .sidebar .contact-info {
     margin-top: auto;
