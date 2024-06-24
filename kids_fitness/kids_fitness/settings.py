@@ -142,4 +142,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'kidsfitness340@gmail.com'
 EMAIL_HOST_PASSWORD = 'xmxu gsth ozlj fmjg'
 EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_USE_TLS = True    

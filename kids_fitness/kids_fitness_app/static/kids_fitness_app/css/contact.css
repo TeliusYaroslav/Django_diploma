@@ -6,8 +6,8 @@ body {
 
 .image-link{
     margin: 0px;
-    width: 75px;
-    height: 75px;
+    width: 75%;
+    height: 75%;
 }
 
 .image-links{
@@ -16,8 +16,8 @@ body {
 }
 
 .contact-information {
-    width: 600px;
-    height: 80vh;
+    width: 60%;
+    height: 80%;
     background-color: #113C65;
     border: 5px solid #FCDB2B;
     display: flex;
@@ -32,53 +32,54 @@ body {
 #contact-label {
     background-color: #F7FF99;
     border-radius: 19px;
-    width: 420px;
-    padding: 8px;
+    width: 42%;
+    padding: 2%;
+    font-size: 125%;
 }
 
 #contact-shedule {
     background-color: #FF9595;
-    padding: 15px;
-    font-size: 75px;
+    padding: 1.5%;
+    font-size: 175%;
     border-radius: 14px;
 }
 
 .clock-img {
-    width: 400px;
+    width: 40%;
 }
 
 .contact-text {
     background-color: #B6A3FF;
-    width: 619px;
+    width: 61%;
     border-radius: 36px;
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    font-size: 35px;
-    padding: 8px;
+    font-size: 135%;
+    padding: 2%;
 }
 
 .contact-address {
     background-color: #D0EEFF;
     border-radius: 34px;
-    width: 709px;
-    font-size: 30px;
+    width: 70%;
+    font-size: 130%;
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    padding: 8px;
+    padding: 2%;
 }
 
 .prices {
     background-color: #D0EEFF;
     border-radius: 15px;
-    font-size: 22px;
+    font-size: 122%;
 }
 
 .prices h5 {
-    font-size: 35px;
+    font-size: 135%;
 }
 
 
@@ -91,17 +92,16 @@ body {
 
 .time-days1 {
     background-color: #ADFF98;
-    padding: 8px;
+    padding: 8%;
     border-radius: 17px;
-    font-size: 30px;
+    font-size: 130%;
 }
 
 .time-time1 {
     background-color: #B7FFE9;
-    padding: 8px;
+    padding: 8%;
     border-radius: 18px;
-    font-size: 25px;
-    width: 134px;
+    font-size: 125%;
 } 
 
 .time-main1 {
@@ -120,16 +120,16 @@ body {
 
 .time-days2 {
     background-color: #FDFFA7;
-    padding: 8px;
+    padding: 8%;
     border-radius: 17px;
-    font-size: 30px;
+    font-size: 130%;
 }
 
 .time-time2 {
     background-color: #E5BBFF;
-    padding: 8px;
+    padding: 8%;
     border-radius: 18px;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 .bold {

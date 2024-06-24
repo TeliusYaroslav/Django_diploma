@@ -2,6 +2,21 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.models import User
+from django.core.mail import send_mail
+from kids_fitness import settings
+
+
+def send_mails(request):
+    if request.method == 'POST':
+        text = request.POST.get('text')
+        email = request.POST.get('email')
+        send_mail(subject = 'ТипоТема',
+                  message = text,
+                  from_email = settings.EMAIL_HOST_USER,
+                  recipient_list = [email],
+                  fail_silently = False)
+        return render(request, 'kids_fitness_app/main.html')
+
 
 def main(request):
     return render(request, 'kids_fitness_app/main.html')

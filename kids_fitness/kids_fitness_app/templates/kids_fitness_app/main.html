@@ -21,7 +21,36 @@
                 <div class="caption-images">
                     <a href="tel:+380660827892"><img src="{% static 'kids_fitness_app/img/phone.png' %}" alt="phone"></a>
                     <a href="http://surl.li/uktfh"><img src="{% static 'kids_fitness_app/img/map.png' %}" alt="map"></a>
-                    <a href="#"><img src="{% static 'kids_fitness_app/img/ask.png' %}" alt="ask"></a>
+                    <a id="openButton" style="cursor: pointer;"><img src="{% static 'kids_fitness_app/img/ask.png' %}" alt="ask"></a>
+                    <dialog id="modal" style="font-size: 30px; width: 500px;">
+                        <div class="modal_inner">
+                            <form id="form" method="dialog">
+                                <label for="email">Пошта</label>
+                                <input type="email" name="email" id="email">
+                                <br>
+                                <label for="password">Питання</label>
+                                <textarea type="password" name="password" id="password"></textarea>
+                                <button id="closeButton">Закрити вiкно</button>
+                                <button>Вiдправити</button>
+                            </form>
+                        </div>
+                    </dialog>
+                    <script>
+                        openButton.addEventListener('click', () => {
+                            modal.showModal()
+                        })
+                        closeButton.addEventListener('click', () => {
+                            modal.close()
+                        })
+                        modal.addEventListener('click', (element) => {
+                            const modal = element.currentTarget
+                            const clickBackdrop = element.target === modal
+
+                            if (clickBackdrop) {
+                                modal.close()
+                            }
+                        })
+                    </script>
                 </div>
               </div>
             <img style="height: 100vh;" src="{% static 'kids_fitness_app/img/main.png' %}" class="d-block w-100 carousel-image" alt="Slide 1">
@@ -52,7 +81,36 @@
                 <div class="caption-images">
                     <a href="tel:+380660827892"><img src="{% static 'kids_fitness_app/img/phone.png' %}" alt="phone"></a>
                     <a href="http://surl.li/uktfh"><img src="{% static 'kids_fitness_app/img/map.png' %}" alt="map"></a>
-                    <a href="#"><img src="{% static 'kids_fitness_app/img/ask.png' %}" alt="ask"></a>
+                    <a id="openButton" style="cursor: pointer;"><img src="{% static 'kids_fitness_app/img/ask.png' %}" alt="ask"></a>
+                    <dialog id="modal" style="font-size: 30px; width: 500px;">
+                        <div class="modal_inner">
+                            <form id="form" method="dialog">
+                                <label for="email">Пошта</label>
+                                <input type="email" name="email" id="email">
+                                <br>
+                                <label for="password">Питання</label>
+                                <textarea type="password" name="password" id="password"></textarea>
+                                <button id="closeButton">Закрити вiкно</button>
+                                <button>Вiдправити</button>
+                            </form>
+                        </div>
+                    </dialog>
+                    <script>
+                        openButton.addEventListener('click', () => {
+                            modal.showModal()
+                        })
+                        closeButton.addEventListener('click', () => {
+                            modal.close()
+                        })
+                        modal.addEventListener('click', (element) => {
+                            const modal = element.currentTarget
+                            const clickBackdrop = element.target === modal
+
+                            if (clickBackdrop) {
+                                modal.close()
+                            }
+                        })
+                    </script>
                 </div>
               </div>
             <img style="height: 100vh;" src="{% static 'kids_fitness_app/img/kartinka2.jpg' %}" class="d-block w-100 carousel-image" alt="Slide 2">
@@ -83,7 +141,36 @@
                 <div class="caption-images">
                     <a href="tel:+380660827892"><img src="{% static 'kids_fitness_app/img/phone.png' %}" alt="phone"></a>
                     <a href="http://surl.li/uktfh"><img src="{% static 'kids_fitness_app/img/map.png' %}" alt="map"></a>
-                    <a href="#"><img src="{% static 'kids_fitness_app/img/ask.png' %}" alt="ask"></a>
+                    <a id="openButton" style="cursor: pointer;"><img src="{% static 'kids_fitness_app/img/ask.png' %}" alt="ask"></a>
+                    <dialog id="modal" style="font-size: 30px; width: 500px;">
+                        <div class="modal_inner">
+                            <form id="form" method="dialog">
+                                <label for="email">Пошта</label>
+                                <input type="email" name="email" id="email">
+                                <br>
+                                <label for="password">Питання</label>
+                                <textarea type="password" name="password" id="password"></textarea>
+                                <button id="closeButton">Закрити вiкно</button>
+                                <button>Вiдправити</button>
+                            </form>
+                        </div>
+                    </dialog>
+                    <script>
+                        openButton.addEventListener('click', () => {
+                            modal.showModal()
+                        })
+                        closeButton.addEventListener('click', () => {
+                            modal.close()
+                        })
+                        modal.addEventListener('click', (element) => {
+                            const modal = element.currentTarget
+                            const clickBackdrop = element.target === modal
+
+                            if (clickBackdrop) {
+                                modal.close()
+                            }
+                        })
+                    </script>
                 </div>
               </div>
             <img style="height: 100vh;" src="{% static 'kids_fitness_app/img/kartinka3.jpg' %}" class="d-block w-100   carousel-image" alt="Slide 3">
