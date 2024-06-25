@@ -1,4 +1,6 @@
-# Учасники команди / team members
+# Дитяча фітнес студія Kids Fitness
+
+## Учасники команди / team members
 
 - Ярослав Теліус / Yaroslav Telius 
 [Github](https://github.com/TeliusYaroslav "Github")
@@ -25,7 +27,7 @@
 [Figma](https://www.figma.com/design/B4FPYXDBsxMPMCjVxroGOU/Untitled?t=Xzdp1BLUnI5nLwLm-0 "Figma")
 [Figjam](https://www.figma.com/board/SdWArB2QfOjYUKFSFBrJoM/Untitled?node-id=0-1&t=Y9qskt3i5QIP55ed-0 "Figjam")
 
-## Технології / Technologies
+### Технології / Technologies
 - Html
 - JavaScript
 - Css
@@ -38,11 +40,11 @@
 - jquery
 - Git
 
-## Запуск проекту / launch of the project 
+### Запуск проекту / launch of the project 
 - ---
 
-# Основні Функції / main functions
-### views.py
+## Основні Функції / main functions
+#### views.py
 - Функція відправлення запису на заняття 
 - ``def submit_registration(request): ``
 - Функція відображення головної сторінки
@@ -61,7 +63,7 @@
 - ``def register(request):``
 - Функція відображення логіну та логіка роботи
 - ``def user_login(request):``
-- Функція вихіду з аккаунту
+-Функція вихіду з аккаунту
 - ``def user_logout(request):``
 
 
