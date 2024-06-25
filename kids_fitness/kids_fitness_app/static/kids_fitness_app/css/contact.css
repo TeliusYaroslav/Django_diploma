@@ -6,13 +6,13 @@ body {
 
 .image-link{
     margin: 0px;
-    width: 75%;
-    height: 75%;
+    width: 90%;
+    height: 95%;
 }
 
 .image-links{
     gap: 30px;
-    margin-top: 3%;
+    margin-top: 1.5%;
 }
 
 .contact-information {
@@ -27,14 +27,15 @@ body {
     align-items: center;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 1%;
 }
 
 #contact-label {
     background-color: #F7FF99;
     border-radius: 19px;
-    width: 42%;
     padding: 2%;
     font-size: 125%;
+    width: 52%;
 }
 
 #contact-shedule {
@@ -42,6 +43,7 @@ body {
     padding: 1.5%;
     font-size: 175%;
     border-radius: 14px;
+    margin-top: 3.5%;
 }
 
 .clock-img {
@@ -50,7 +52,7 @@ body {
 
 .contact-text {
     background-color: #B6A3FF;
-    width: 61%;
+    width: 70%;
     border-radius: 36px;
     display: flex;
     text-align: center;
@@ -102,6 +104,7 @@ body {
     padding: 8%;
     border-radius: 18px;
     font-size: 125%;
+    margin-bottom: 10%;
 } 
 
 .time-main1 {
