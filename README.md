@@ -44,25 +44,25 @@
 # Основні Функції / main functions
 ### views.py
 - Функція відправлення запису на заняття 
-``def submit_registration(request): ``
+- ``def submit_registration(request): ``
 - Функція відображення головної сторінки
-``def main(request):``
+- ``def main(request):``
 - Функція відображення сторінки послуг
-``def service(request):``
+- ``def service(request):``
 - Функція відображення сторінки запису
-``def sign_up(request):``
+- ``def sign_up(request):``
 - Функція відображення сторінки з інформацією про фітнес-клуб
-``def about_us(request):``
+- ``def about_us(request):``
 - Функція відображення галереї
-``def gallery(request):``
+- ``def gallery(request):``
 - Функція відображення контактів
-``def contacts(request):``
+- ``def contacts(request):``
 - Функція відображення сторінки реєстрації та логіка роботи
-``def register(request):``
+- ``def register(request):``
 - Функція відображення логіну та логіка роботи
-``def user_login(request):``
-Функція вихіду з аккаунту
-``def user_logout(request):``
+- ``def user_login(request):``
+- Функція вихіду з аккаунту
+- ``def user_logout(request):``
 
 
 
