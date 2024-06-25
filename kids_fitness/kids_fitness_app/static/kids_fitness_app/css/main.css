@@ -82,6 +82,7 @@
 }
 
 .image-links{
+    margin-left: 0px;
     gap: 30px;
     max-width: 285px;
     max-height: 75px;
@@ -94,6 +95,7 @@
 #modal {
     border: none;
     padding: 0;
+    border-radius: 10px;
 }
 
 .modal_inner {
@@ -106,7 +108,9 @@
     color: white;
 }
 
-
+.b-r {
+    border-radius: 7px;
+}
 
 
 @media (max-width:1920px) {

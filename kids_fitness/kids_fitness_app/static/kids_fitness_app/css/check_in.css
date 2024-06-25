@@ -1,50 +1,72 @@
-.content{
+.content {
     padding: 0;
 }
 
-.main-container{
-    height: 100vh;
-    position: relative; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-container {
+    height: 100%;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 13%;
 }
 
 .bg-image {
-    position: fixed; 
-    width: 100%; 
-    height: 100%; 
+    position: absolute;
+    width: 85%;
+    height: 100%;
     object-fit: cover;
     z-index: -1; 
 }
 
-#FormContainer{
+.form-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.Form-box{
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
+.form-title {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-.form-inner{
+.form-inner {
     background-color: rgba(17,60,101,1);
     border: 2px solid #ffd700;
+    margin-top: 14%;
     border-radius: 10px;
     padding: 30px;
     width: 500px;
     text-align: center;
 }
 
-.form-inner h2 {
+.form-group {
+    margin: 10px 0;
+}
+
+.form-control {
+    width: calc(100% - 22px);
+    background-color: rgba(17,60,101,1);
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.btn-custom {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(203, 230, 255);
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.paragraph {
     color: #fff;
-    font-size: 24px;
-    margin-bottom: 20px;
 }
 
 .form-inner input[type="text"],
@@ -53,6 +75,7 @@
     background-color: rgba(17,60,101,1);
     padding: 10px;
     margin: 10px 0;
+    color: #fff;
     border: 1px solid #ffffff;
     border-radius: 5px;
     font-size: 30px;
@@ -70,16 +93,3 @@
     margin-top: 10px;
 }
 
-.paragraph{
-    color: #fff;
-}
-
-.form-inner input[type="email"] {
-    width: calc(100% - 22px);
-    background-color: rgba(17,60,101,1);
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    font-size: 30px;
-}

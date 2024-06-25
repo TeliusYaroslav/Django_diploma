@@ -31,6 +31,8 @@ urlpatterns = [
     path('logout/', user_logout, name='logout'),
     path('service/', service, name='service'),
     path('sign_up/', sign_up, name='sign_up'),
+    path('send-mails/', send_mails, name='send_mails'),
+    path('submit_registration/', submit_registration, name='submit_registration'),
 ]
 
 

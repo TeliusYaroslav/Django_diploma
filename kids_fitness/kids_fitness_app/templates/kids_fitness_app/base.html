@@ -12,11 +12,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
+    <script defer src="{% static 'kids_fitness_app/js/base.js' %}"></script>
     {% block links %}
     {% endblock %}
+    <style>
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .content {
+                margin-left: 0;
+            }
+        }
+    </style>
 </head>
 <body> 
-    <!-- я ваще хз, как кноп -->
     <div class="sidebar">
         <div class="logo">
             <img src="{% static 'kids_fitness_app/img/Group 26.png' %}" alt="Kids Fitness Logo">
@@ -85,6 +98,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
     {% block scripts %}
     {% endblock %}
 </body>
