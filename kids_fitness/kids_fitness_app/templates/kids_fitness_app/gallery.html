@@ -3,12 +3,12 @@
 
 {% block links %}
     <link rel="stylesheet" href="{% static 'kids_fitness_app/css/gallery.css' %}">
-    <script src="{% static 'kids_fitness_app/js/gallery.js' %}"></script>
+    <script defer src="{% static 'kids_fitness_app/js/gallery.js' %}"></script>
 {% endblock %}
 
 {% block content %}
     <div class="container mt-4">
-        <h1 class="text-center my-4">НАША ГАЛЕРЕЯ</h1>
+        <h1 class="text-center my-4" id="Article">НАША ГАЛЕРЕЯ</h1>
         <div class="row">
             <div class="col p-2">
                 <img src="{% static 'kids_fitness_app/img/image26.png' %}" alt="Image 1" class="img-fluid fixed-size">

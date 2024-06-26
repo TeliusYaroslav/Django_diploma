@@ -15,19 +15,6 @@
     <script defer src="{% static 'kids_fitness_app/js/base.js' %}"></script>
     {% block links %}
     {% endblock %}
-    <style>
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
-            }
-
-            .content {
-                margin-left: 0;
-            }
-        }
-    </style>
 </head>
 <body> 
     <div class="sidebar">
@@ -37,40 +24,38 @@
         <div class="nav flex-column py-3">
             <li class="nav-item button" id="square1" onclick="location.href='';">
                 <a href="{% url 'main' %}" class="nav-link d-flex align-items-center" style="padding-left: 10px;">
-                    <div class="circle d-flex justify-content-center align-items-center" id="circle1">
-                        <p style="color: white;">1</p>
-                    </div>
-                    <span class="ms-2">Головна</span>
+                    <div class="circle d-flex justify-content-center align-items-center" id="circle1">1</div>
+                    <span class="ms-1 text-left-padding">Головна</span>
                 </a>
             </li>
             <li class="nav-item button" id="square2" onclick="location.href='gallery';">
                 <a href="{% url 'gallery' %}" class="nav-link d-flex align-items-center" style="padding-left: 10px;">
                     <div class="circle d-flex justify-content-center align-items-center" id="circle2">2</div>
-                    <span class="ms-2">Галерея</span>
+                    <span class="ms-1 text-left-padding">Галерея</span>
                 </a>
             </li>
             <li class="nav-item button" id="square3" onclick="location.href='service';">
                 <a href="{% url 'service' %}" class="nav-link d-flex align-items-center" style="padding-left: 10px;">
                     <div class="circle d-flex justify-content-center align-items-center" id="circle3">3</div>
-                    <span class="ms-2">Послуги</span>
+                    <span class="ms-1 text-left-padding">Послуги</span>
                 </a>
             </li>
             <li class="nav-item button" id="square4" onclick="location.href='about_us';">
                 <a href="{% url 'about_us' %}" class="nav-link d-flex align-items-center" style="padding-left: 10px;">
                     <div class="circle d-flex justify-content-center align-items-center" id="circle4">4</div>
-                    <span class="ms-2">Про нас</span>
+                    <span class="ms-1 text-left-padding">Про нас</span>
                 </a>
             </li>
             <li class="nav-item button" id="square5" onclick="location.href='contacts';">
                 <a href="{% url 'contacts' %}" class="nav-link d-flex align-items-center" style="padding-left: 10px;">
                     <div class="circle d-flex justify-content-center align-items-center" id="circle5">5</div>
-                    <span class="ms-2">Контакти</span>
+                    <span class="ms-1 text-left-padding">Контакти</span>
                 </a>
             </li>
             <li class="nav-item mt-4 button" id="square6" onclick="location.href='sign_up';">
                 <a href="{% url 'sign_up' %}" class="nav-link d-flex align-items-center">
-                    <div class="circle d-flex justify-content-center align-items-center" id="circle6">!</div>
-                    <span class="ms-2">Запис</span>
+                    <div class="circle d-flex justify-content-center align-items-center" id="circle6" style="font-weight: 500px;">!</div>
+                    <span class="ms-1 text-left-padding">Запис</span>
                 </a>
             </li>
         </div>

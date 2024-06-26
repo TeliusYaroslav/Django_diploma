@@ -36,7 +36,14 @@ body {
     text-align: center;
 }
 
+.contact-info p {
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+}
+
 .contact-info a {
+    font-size: 1vw;
     color: white;
     text-decoration: none;
 }
@@ -49,8 +56,4 @@ body {
     margin-left: 15%;
     padding: 20px;
     z-index: 1;
-}
-
-.contact-info {
-    font-size: 10px;
 }

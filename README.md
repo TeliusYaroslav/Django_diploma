@@ -55,18 +55,18 @@
 ## <a id="title3">Використання / launch of the project</a>
 ### 1.Встановити додатки 
 - Python django використовуємий у проекті фреймворк 
-> Відкрийте консоль у вашому редакторі кода та впишіть команду 
-> ```pip install django```    
->Далі перевірте чи встановился фреймворк
->```django-admin --version```
+Відкрийте консоль у вашому редакторі кода та впишіть команду 
+> **```pip install django```**    
+Далі перевірте чи встановился фреймворк
+>**```django-admin --version```**
 - Також проект використовує такі стандартні мови як HTML,CSS,JS Які встановлювати не потрібно
 ### 2. Запуск проекту(локально)
 - Клонуємо проект з github-у використовуючи команду 
-> git clone https://github.com/TeliusYaroslav/Django_diploma.git
-- Далі перехолимо до рабочої дерикторії використовуючи команду
-> cd kids_fitness
+> **git clone https://github.com/TeliusYaroslav/Django_diploma.git**
+- Далі переходимо до рабочої дерикторії використовуючи команду
+> **cd kids_fitness**
 - Запускаємо локальний сервер використовуючи команду
-> python manage.py runserver 
+> **python manage.py runserver**
 ## <a id="title4">Основні Функції / main functions</a>
 #### views.py
 - **Функція відправлення запису на заняття**
