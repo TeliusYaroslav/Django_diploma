@@ -63,7 +63,10 @@
 ### 2. Запуск проекту(локально)
 - Клонуємо проект з github-у використовуючи команду 
 > git clone https://github.com/TeliusYaroslav/Django_diploma.git
-
+- Далі перехолимо до рабочої дерикторії використовуючи команду
+> cd kids_fitness
+- Запускаємо локальний сервер використовуючи команду
+> python manage.py runserver 
 ## <a id="title4">Основні Функції / main functions</a>
 #### views.py
 - **Функція відправлення запису на заняття**
