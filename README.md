@@ -2,12 +2,14 @@
 #### Сайт створенний для швидкого та простого запису на заняття до дитячої фітнесс студії
 ![](readme_img/Group%2026%20(1).png)
 # Зміст
-- [Учасники-команди](#Учасники-команди)
-- [Технології](#Технології)
-- [Використання](#Використання)
-- [Основні Функції](#Основні-Функції)
-- []()
-## Учасники команди / team members
+[Учасники команди / team members](#title1)
+[Переваги](#title5)
+[Технології / Technologie](#title2)
+[Використання / launch of the project](#title3)
+[Основні Функції / main functions](#title4)
+
+
+## <a id="title1">Учасники команди / team members</a>
 - Ярослав Теліус / Yaroslav Telius 
 >- [Github](https://github.com/TeliusYaroslav "Github")
 >- [Figma](https://www.figma.com/design/B4FPYXDBsxMPMCjVxroGOU/Untitled?node-id=0-1&t=M1SHABTPBk7JIkpU-0 "Figma")
@@ -33,23 +35,36 @@
 > - [Figma](https://www.figma.com/design/B4FPYXDBsxMPMCjVxroGOU/Untitled?t=Xzdp1BLUnI5nLwLm-0 "Figma")
 > - [Figjam](https://www.figma.com/board/SdWArB2QfOjYUKFSFBrJoM/Untitled?node-id=0-1&t=Y9qskt3i5QIP55ed-0 "Figjam")
 
-### Технології / Technologies
-- Html
-- JavaScript
-- Css
-- Python Django 
-- SQlite3
-- MySQL
-- Bootstrap 5
-- ChatGpt 3
-- ajax 
-- jquery
-- Git
+## <a id="title5">Переваги </a>
 
-### Використання / launch of the project 
-- ---
+###### Наш проект в першу чергу це зручна платформа для простого та швидкого запису дітей у дитячий фітнес центр.  для нас як для розробників цей проект це серйозна практика щодо створення повноцінного сайту для замовника,
 
-## Основні Функції / main functions
+
+## <a id="title2">Технології / Technologies</a>
+- **Html**
+- **JavaScript**
+- **Css**
+- **Python Django** 
+- **SQlite3**
+- **MySQL**
+- **Bootstrap 5**
+- **ChatGpt 3**
+- **ajax**
+- **jquery**
+- **Git**
+## <a id="title3">Використання / launch of the project</a>
+### 1.Встановити додатки 
+- Python django використовуємий у проекті фреймворк 
+> Відкрийте консоль у вашому редакторі кода та впишіть команду 
+> ```pip install django```    
+>Далі перевірте чи встановился фреймворк
+>```django-admin --version```
+- Також проект використовує такі стандартні мови як HTML,CSS,JS Які встановлювати не потрібно
+### 2. Запуск проекту(локально)
+- Клонуємо проект з github-у використовуючи команду 
+> git clone https://github.com/TeliusYaroslav/Django_diploma.git
+
+## <a id="title4">Основні Функції / main functions</a>
 #### views.py
 - **Функція відправлення запису на заняття**
 ```python
@@ -205,9 +220,3 @@ def user_login(request):
         # Перенаправляємо користувача на головну сторінку
         return redirect('main')
 ```
-
-
-
-
-
-
