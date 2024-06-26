@@ -1,12 +1,15 @@
 .content {
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .main-container {
     height: 100%;
-    position: absolute;
-    margin-left: 30%;
-    margin-top: 13%;
+    position: relative;
+    margin: 0;
 }
 
 .bg-image {
@@ -14,56 +17,124 @@
     width: 85%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; 
+    z-index: -1;
 }
 
 .form-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .form-title {
     color: #fff;
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 4vw; 
 }
 
 .form-inner {
     background-color: rgba(17,60,101,1);
     border: 2px solid #ffd700;
-    border-radius: 10px;
-    padding: 50px; 
-    width: 700px; 
+    border-radius: 1rem;
+    padding: 5%;
+    width: 60%;
+    height: 95%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .form-group {
-    margin: 20px 0; 
+    margin: 2vh 0; 
 }
 
 .form-control {
-    width: 100%; 
+    width: 100%;
     background-color: rgba(17,60,101,1);
-    padding: 20px;
+    padding: 2vh; 
     border: 1px solid #ffffff;
-    border-radius: 5px;
-    font-size: 28px;
+    border-radius: 0.5rem;
+    font-size: 3vw; 
     color: #ffffff;
 }
 
 .btn-custom {
-    width: 60%; 
-    padding: 20px;
+    width: 100%;
+    padding: 1vh; 
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     background-color: rgb(203, 230, 255);
-    color: #000;
-    font-size: 26px; 
+    color: black;
+    font-size: 2.5vw; 
     cursor: pointer;
-    margin-top: 20px; 
+    margin-top: 2vh; 
 }
 
 .paragraph {
     color: #fff;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="email"] {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(17,60,101,1);
+    padding: 4vh; 
+    border: 1px solid #ffffff;
+    border-radius: 0.5rem;
+    font-size: 2.0vw; 
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .form-inner {
+        width: 80%;
+        height: auto;
+        padding: 5%;
+    }
+
+    .btn-custom {
+        font-size: 5vw;
+    }
+
+    .form-control {
+        font-size: 5vw;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    input[type="email"] {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-inner {
+        width: 90%;
+        height: auto;
+        padding: 5%;
+    }
+
+    .btn-custom {
+        font-size: 4vw;
+    }
+
+    .form-control {
+        font-size: 4vw;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    input[type="email"] {
+        font-size: 4vw;
+    }
 }

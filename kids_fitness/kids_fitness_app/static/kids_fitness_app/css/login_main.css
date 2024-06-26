@@ -37,13 +37,14 @@
     border: 2px solid #ffd700;
     border-radius: 10px;
     padding: 30px;
-    width: 500px;
+    width: 35vw;
+    height: 50vh;
     text-align: center;
 }
 
-.form-inner h2 {
+.form-inner h1 {
     color: #fff;
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
@@ -72,4 +73,8 @@
 
 .paragraph{
     color: #fff;
+}
+
+input::placeholder{
+    text-align: center;
 }

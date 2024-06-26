@@ -140,7 +140,9 @@ span {
     line-height: calc(3vw + 10px); 
     position: absolute; 
     left: calc(-1.4vw - 20px);
+    font-size: calc(1vw + 20px);
 }
+
 
 .sidebar .nav-item {
     display: flex;

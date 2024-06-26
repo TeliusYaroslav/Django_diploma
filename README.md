@@ -10,7 +10,7 @@
 
 
 ## <a id="title1">Учасники команди / team members</a>
-- Ярослав Теліус / Yaroslav Telius 
+- Ярослав Теліус / Yaroslav Telius - Team lead 
 >- [Github](https://github.com/TeliusYaroslav "Github")
 >- [Figma](https://www.figma.com/design/B4FPYXDBsxMPMCjVxroGOU/Untitled?node-id=0-1&t=M1SHABTPBk7JIkpU-0 "Figma")
 >- [Figjam](https://www.figma.com/board/SdWArB2QfOjYUKFSFBrJoM/Untitled?node-id=0-1&t=RFILsCbM5wzPIvhM-0 "Figjam")
@@ -37,7 +37,7 @@
 
 ## <a id="title5">Переваги </a>
 
-### Наш проект в першу чергу це зручна платформа для простого та швидкого запису дітей у дитячий фітнес центр.  для нас як для розробників цей проект це серйозна практика щодо створення повноцінного сайту для замовника,
+### Наш проект в першу чергу це зручна платформа для простого та швидкого запису дітей у дитячий фітнес центр. Для нас як для розробників цей проект це серйозна практика щодо створення повноцінного сайту для замовника
 
 
 ## <a id="title2">Технології / Technologies</a>
@@ -52,15 +52,19 @@
 - **ajax**
 - **jquery**
 - **Git**
+
+## <a id="title3">Структура</a>
+
+
 ## <a id="title3">Використання / launch of the project</a>
-### 1.Встановити додатки 
+## 1.Встановити додатки 
 - Python django використовуємий у проекті фреймворк 
 Відкрийте консоль у вашому редакторі кода та впишіть команду 
 > **```pip install django```**    
-Далі перевірте чи встановился фреймворк
+- Далі перевірте чи встановился фреймворк
 >**```django-admin --version```**
 - Також проект використовує такі стандартні мови як HTML,CSS,JS Які встановлювати не потрібно
-### 2. Запуск проекту(локально)
+## 2. Запуск проекту(локально)
 - Клонуємо проект з github-у використовуючи команду 
 > **git clone https://github.com/TeliusYaroslav/Django_diploma.git**
 - Далі переходимо до рабочої дерикторії використовуючи команду
@@ -223,3 +227,208 @@ def user_login(request):
         # Перенаправляємо користувача на головну сторінку
         return redirect('main')
 ```
+### JavaScript 
+### gallery.js
+**Цей JavaScript файл відповідає за створення модального вікна для перегляду зображень у повному розмірі при кліку на них.**
+
+### Завантаження DOM
+
+>**document.addEventListener("DOMContentLoaded", function() {})**
+
+- Цей рядок коду гарантує, що весь HTML документ повністю завантажений і розпарсений перед виконанням скрипту.
+
+## Створення модального вікна
+```javascript
+const images = document.querySelectorAll('.fixed-size');
+const modal = document.createElement('div');
+const modalImg = document.createElement('img');
+modal.classList.add('modal');
+modalImg.classList.add('modal-content');
+modal.appendChild(modalImg);
+document.body.appendChild(modal);
+```
+>**images: Знаходить всі зображення з класом .fixed-size.
+modal: Створює новий div елемент для модального вікна.
+modalImg: Створює новий img елемент для зображення в модальному вікні.
+modal.classList.add('modal'): Додає клас modal до div елементу.
+modalImg.classList.add('modal-content'): Додає клас modal-content до img елементу.
+modal.appendChild(modalImg): Вставляє img елемент в div.
+document.body.appendChild(modal): Додає модальне вікно до тіла документа.**
+
+
+## Відкриття модального вікна при кліку на зображення
+```javascript
+images.forEach(image => {
+    image.addEventListener('click', function() {
+        modal.style.display = 'flex';
+        setTimeout(() => {
+            modal.classList.add('show');
+        }, 10);
+        modalImg.src = this.src;
+        modalImg.style.maxWidth = 'none';
+        modalImg.style.maxHeight = 'none';
+        modalImg.style.width = 'auto';
+        modalImg.style.height = 'auto';
+    });
+});
+```
+>**images.forEach(image => ...): Додає обробник подій для кожного зображення.
+image.addEventListener('click', function() { ... }): Виконує функцію при кліку на зображення.
+modal.style.display = 'flex': Відображає модальне вікно.
+setTimeout(() => { modal.classList.add('show'); }, 10): Додає клас show для анімації через 10 мілісекунд.
+modalImg.src = this.src: Задає джерело зображення для модального вікна.
+modalImg.style.maxWidth = 'none': Вимикає максимальну ширину.
+modalImg.style.maxHeight = 'none': Вимикає максимальну висоту.
+modalImg.style.width = 'auto': Встановлює ширину зображення автоматично.
+modalImg.style.height = 'auto': Встановлює висоту зображення автоматично.**
+## Закриття модального вікна при кліку поза зображенням
+```javascript
+modal.addEventListener('click', function() {
+    modal.classList.remove('show');
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 300);
+});
+```
+>**modal.addEventListener('click', function() { ... }): Виконує функцію при кліку на модальне вікно.
+modal.classList.remove('show'): Видаляє клас show для анімації закриття.
+setTimeout(() => { modal.style.display = 'none'; }, 300): Приховує модальне вікно через 300 мілісекунд.**
+
+## Закриття модального вікна при кліку на зображення в модальному вікні
+```javascript
+modalImg.addEventListener('click', function(event) {
+    event.stopPropagation();
+    modal.classList.remove('show');
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 300);
+});
+```
+>**modalImg.addEventListener('click', function(event) { ... }): Виконує функцію при кліку на зображення в модальному вікні.
+event.stopPropagation(): Зупиняє подальше розповсюдження події кліку.
+modal.classList.remove('show'): Видаляє клас show для анімації закриття.
+setTimeout(() => { modal.style.display = 'none'; }, 300): Приховує модальне вікно через 300 мілісекунд.**
+
+- **register_main.js
+Цей JavaScript файл відповідає за валідацію форми реєстрації. Він перевіряє, чи всі необхідні поля заповнені, а також чи співпадають введені паролі.
+Функція валідації форми**
+```javascript
+function validateForm() {
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var password_confirm = document.getElementById("password_confirm").value;**
+
+    if (username.trim() == '') {
+        alert('Будь ласка, введіть ім'я користувача.');
+        return false;
+    }
+
+    if (email.trim() == '') {
+        alert('Будь ласка, введіть адресу електронної пошти.');
+        return false;
+    }
+
+    if (password.trim() == '') {
+        alert('Будь ласка, введіть пароль.');
+        return false;
+    }
+
+    if (password != password_confirm) {
+        alert('Паролі не співпадають.');
+        return false;
+    }
+
+    return true;
+}
+```
+>**validateForm(): Основна функція для валідації форми.**
+
+- **Опис коду всередині функції**
+```javascript
+var username = document.getElementById("username").value;
+var email = document.getElementById("email").value;
+var password = document.getElementById("password").value;
+var password_confirm = document.getElementById("password_confirm").value;
+```
+>**username: Отримує значення поля вводу з id username.
+email: Отримує значення поля вводу з id email.
+password: Отримує значення поля вводу з id password.
+password_confirm: Отримує значення поля вводу з id password_confirm.**
+
+- **Перевірка на пустоту поля ім'я користувача**
+```javascript
+if (username.trim() == '') {
+    alert('Будь ласка, введіть ім`я користувача.');
+    return false;
+}
+```
+>**username.trim() == '': Перевіряє, чи поле ім'я користувача не пусте після видалення пробілів.
+alert('Будь ласка, введіть ім'я користувача.'): Виводить повідомлення, якщо поле пусте.
+return false: Зупиняє подальше виконання функції, якщо поле пусте.**
+
+- **Перевірка на пустоту поля електронної пошти**
+```javascript
+if (email.trim() == '') {
+    alert('Будь ласка, введіть адресу електронної пошти.');
+    return false;
+}
+```
+>**email.trim() == '': Перевіряє, чи поле електронної пошти не пусте після видалення пробілів.
+alert('Будь ласка, введіть адресу електронної пошти.'): Виводить повідомлення, якщо поле пусте.
+return false: Зупиняє подальше виконання функції, якщо поле пусте.**
+
+Перевірка на пустоту поля паролю
+```javascript
+if (password.trim() == '') {
+    alert('Будь ласка, введіть пароль.');
+    return false;
+}
+```
+>**password.trim() == '': Перевіряє, чи поле паролю не пусте після видалення пробілів.
+alert('Будь ласка, введіть пароль.'): Виводить повідомлення, якщо поле пусте.
+return false: Зупиняє подальше виконання функції, якщо поле пусте.**
+
+- **Перевірка на співпадіння паролів**
+```javascript
+if (password != password_confirm) {
+    alert('Паролі не співпадають.');
+    return false;
+}
+```
+>**password != password_confirm: Перевіряє, чи введені паролі співпадають.
+alert('Паролі не співпадають.'): Виводить повідомлення, якщо паролі не співпадають.
+return false: Зупиняє подальше виконання функції, якщо паролі не співпадають.**
+
+- **Повернення true, якщо всі перевірки пройдені**
+```javascript
+return true;
+```
+>**Дозволяє подальше виконання форми, якщо всі перевірки пройдені.**
+
+## **Як провести міграції у проектi, щоб ініціалізувати базу даних проекту?**
+
+- **Створюємо новий термінал (якщо вже є, можна не створювати), пишемо команду**
+>python manage.py makemigrations
+
+- **Після того як наша база була створена, пишемо**
+>python manage.py migrate
+
+Тепер база даних готова до роботи.
+___
+
+##  **Що таке база даних, чому саме MySQL, яку роль виконує id у таблицях бази даних.** 
+
+**База даних** - це організоване сховище структурованих даних. Це означає, що дані зберігаються в таблицях, які складаються з рядків і стовпців. Кожен рядок представляє окремий запис, а кожен стовпець - певне поле даних.
+
+**ID (ідентифікатор)** - це унікальне поле, яке використовується для однозначної ідентифікації кожного запису в таблиці. Він зазвичай є числом, але також може бути текстовим рядком або комбінацією тексту та чисел.
+ID відіграє важливу роль у базах даних, виконуючи такі функції:
+
+- **Первинний ключ:** ID є первинним ключем таблиці, що означає, що він гарантує унікальність кожного запису. Це важливо для запобігання дублюванню даних та забезпечення цілісності бази даних.
+- **Зв'язок між таблицями:** ID можна використовувати для зв'язку різних таблиць бази даних. Наприклад, таблиця замовлень може мати поле ID_клієнта, яке посилається на поле ID у таблиці клієнтів. Це дозволяє пов'язувати замовлення з конкретними клієнтами.
+- **Індексування: ID** часто використовуються для індексування даних, що робить їх пошук та вибірку швидшими.
+- **Фільтрація та сортування:** ID можна використовувати для фільтрації та сортування даних у таблицях.
+![](readme_img/photo_2024-06-26_22-18-21.jpg)
+
+___
+

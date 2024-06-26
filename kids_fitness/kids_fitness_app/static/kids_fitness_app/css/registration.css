@@ -4,6 +4,7 @@
 
 .main-container{
     height: 100vh;
+    width: 100vw;
     position: relative; 
     display: flex;
     justify-content: center;
@@ -37,14 +38,14 @@
     border: 2px solid #ffd700;
     border-radius: 10px;
     padding: 30px;
-    width: 300%;
-    height: 80vh;
+    width: 40vw;
+    height: 70vh;
     text-align: center;
 }
 
-.form-inner h2 {
+.form-inner h1 {
     color: #fff;
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
@@ -83,4 +84,8 @@
     border: 1px solid #ffffff;
     border-radius: 5px;
     font-size: 30px;
+}
+
+input::placeholder{
+    text-align: center;
 }
