@@ -1,8 +1,13 @@
 # Дитяча фітнес студія Kids Fitness
 #### Сайт створенний для швидкого та простого запису на заняття до дитячої фітнесс студії
 ![](readme_img/Group%2026%20(1).png)
+# Зміст
+- [Учасники-команди](#Учасники-команди)
+- [Технології](#Технології)
+- [Використання](#Використання)
+- [Основні Функції](#Основні-Функції)
+- []()
 ## Учасники команди / team members
-
 - Ярослав Теліус / Yaroslav Telius 
 >- [Github](https://github.com/TeliusYaroslav "Github")
 >- [Figma](https://www.figma.com/design/B4FPYXDBsxMPMCjVxroGOU/Untitled?node-id=0-1&t=M1SHABTPBk7JIkpU-0 "Figma")
@@ -41,7 +46,7 @@
 - jquery
 - Git
 
-### Запуск проекту / launch of the project 
+### Використання / launch of the project 
 - ---
 
 ## Основні Функції / main functions
