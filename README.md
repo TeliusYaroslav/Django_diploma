@@ -1,4 +1,5 @@
 # Дитяча фітнес студія Kids Fitness
+### Сайт створенний для швидкого та простого запису на заняття до дитячої фітнесс студії
 
 ## Учасники команди / team members
 
@@ -45,26 +46,56 @@
 
 ## Основні Функції / main functions
 #### views.py
-- Функція відправлення запису на заняття 
-- ``def submit_registration(request): ``
-- Функція відображення головної сторінки
-- ``def main(request):``
-- Функція відображення сторінки послуг
+- **Функція відправлення запису на заняття**
+```
+def submit_registration(request):
+    if request.method == 'POST':
+        full_name = request.POST.get('full_name')
+        phone_number = request.POST.get('phone_number')
+        child_age = request.POST.get('child_age')
+        training_date = request.POST.get('training_date')
+        email = request.POST.get('email')
+
+        subject = 'Новий запис на заняття'
+        message = f'Ім`я: {full_name}\nНомер телефону: {phone_number}\nВік дитини: {child_age}\nДата тренування: {training_date}\nEmail: {email}'
+        from_email = settings.EMAIL_HOST_USER
+        to_email = [settings.EMAIL_HOST_USER]
+
+        try:
+            email = EmailMessage(subject, message, from_email, to_email)
+            email.send()
+            return render(request, 'kids_fitness_app/sign_up.html')
+        except Exception as e:
+            return HttpResponse("Помилка, спробуйте знову.", status=500)
+    else:
+        return HttpResponse("Метод не дозволен", status=405)
+```
+
+- **Функція відображення головної сторінки**
+- def main(request):
+    return render(request, 'kids_fitness_app/main.html')
+
+- **Функція відображення сторінки послуг**
 - ``def service(request):``
-- Функція відображення сторінки запису
+
+
+- **Функція відображення сторінки запису**
 - ``def sign_up(request):``
-- Функція відображення сторінки з інформацією про фітнес-клуб
+- **Функція відображення сторінки з інформацією про фітнес-клуб**
 - ``def about_us(request):``
-- Функція відображення галереї
+- **Функція відображення галереї**
 - ``def gallery(request):``
-- Функція відображення контактів
+- **Функція відображення контактів**
 - ``def contacts(request):``
-- Функція відображення сторінки реєстрації та логіка роботи
+- **Функція відображення сторінки реєстрації та логіка роботи**
 - ``def register(request):``
-- Функція відображення логіну та логіка роботи
+- **Функція відображення логіну та логіка роботи**
 - ``def user_login(request):``
--Функція вихіду з аккаунту
+- **Функція вихіду з аккаунту**
 - ``def user_logout(request):``
+
+
+
 
 
 

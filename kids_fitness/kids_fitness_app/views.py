@@ -108,3 +108,9 @@ def user_logout(request):
     logout(request)
     messages.info(request, 'Ви успішно вийшли із системи')
     return redirect('main')
+
+
+
+
+
+
