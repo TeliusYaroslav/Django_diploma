@@ -2,11 +2,11 @@
 #### Сайт створенний для швидкого та простого запису на заняття до дитячої фітнесс студії
 ![](readme_img/Group%2026%20(1).png)
 # Зміст
-[Учасники команди / team members](#title1)
-[Переваги](#title5)
-[Технології / Technologie](#title2)
-[Використання / launch of the project](#title3)
-[Основні Функції / main functions](#title4)
+- [Учасники команди / team members](#title1)
+- [Переваги](#title5)
+- [Технології / Technologie](#title2)
+- [Використання / launch of the project](#title3)
+- [Основні Функції / main functions](#title4)
 
 
 ## <a id="title1">Учасники команди / team members</a>
