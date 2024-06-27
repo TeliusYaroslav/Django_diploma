@@ -72,8 +72,8 @@
 > **cd kids_fitness**
 - Запускаємо локальний сервер використовуючи команду
 > **python manage.py runserver**
-
-::: mermaid
+# <a id="title7">Структура</a>
+``` mermaid
 graph TD;
     Django_diploma-->kids_fitnes;
     Django_diploma---->readme_img;
@@ -126,7 +126,7 @@ graph TD;
     kids_fitness--->settings.py
     kids_fitness--->urls.py
     kids_fitness--->wsgi.py
-:::
+```
 
 ## <a id="title4">Основні Функції / main functions</a>
 #### views.py
