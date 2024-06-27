@@ -1,7 +1,8 @@
 .nav a {
+    color: #FFC7B0;
     -webkit-text-fill-color: #FFC7B0;
     -webkit-text-stroke: 1.5px black;
-}
+} 
 
 .sidebar .nav-item {
     margin-bottom: 10px;
@@ -115,10 +116,13 @@ span {
 
 #circle6 {
     background-color: #FCDB2B;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    
 }
 
 .circle p{
-    font-family: "Leckerli One", bold;
+    font-family: 'Leckerli One', bold;
     font-weight: 400;
     color: white;
 }
@@ -126,7 +130,7 @@ span {
 
 .leckerli-one-regular {
     font-family: "Leckerli One", cursive;
-    font-weight: 40;
+    font-weight: 400;
     font-style: normal;
   }
   

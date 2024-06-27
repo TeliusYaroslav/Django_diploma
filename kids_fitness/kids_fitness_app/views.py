@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.models import User
+from .models import Image
 
 from django.core.mail import EmailMessage
 from django.core.mail import send_mail
@@ -50,7 +51,9 @@ def send_mails(request):
         return HttpResponse("Method not allowed", status=405)
 
 def main(request):
-    return render(request, 'kids_fitness_app/main.html')
+    image = Image.objects.get()
+    context = {'image': image}
+    return render(request, 'kids_fitness_app/main.html',context)
 
 def service(request):
     return render(request, 'kids_fitness_app/service.html')
@@ -108,6 +111,7 @@ def user_logout(request):
     logout(request)
     messages.info(request, 'Ви успішно вийшли із системи')
     return redirect('main')
+
 
 
 

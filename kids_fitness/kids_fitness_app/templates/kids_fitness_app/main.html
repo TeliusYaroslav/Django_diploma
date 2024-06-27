@@ -27,10 +27,10 @@
                             <form id="form" method="POST" action="{% url 'send_mails' %}">
                                 {% csrf_token %}
                                 <label for="email">Пошта</label>
-                                <input class="b-r" type="email" name="email" id="email" required>
+                                <input class="b-r" type="email" name="email" id="email" required style="width: 450px;">
                                 <br>
                                 <label for="password">Питання</label>
-                                <textarea class="b-r" name="text" id="password" required></textarea>
+                                <textarea class="b-r" name="text" id="password" required style="width: 450px;"></textarea>
                                 <button class="b-r" type="button" id="closeButton">Закрити вiкно</button>
                                 <button class="b-r" type="submit">Вiдправити</button>
                             </form>
@@ -59,7 +59,7 @@
                     </script>
                 </div>
               </div>
-            <img style="height: 100vh;" src="{% static 'kids_fitness_app/img/main.png' %}" class="d-block w-100 carousel-image" alt="Slide 1">
+            <img style="height: 100vh;" src="{{ image.image.url }}" class="d-block w-100 carousel-image" alt="Slide 1">
             <div class="carousel-caption caption-link d-none d-md-flex align-items-end justify-content-center">
                 <div class="image-links d-flex justify-content-around mt-4">
                     <a href="https://www.facebook.com/groups/159212643825421/?_rdr" target="_blank">
