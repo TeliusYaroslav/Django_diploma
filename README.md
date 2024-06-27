@@ -72,7 +72,7 @@
 > **cd kids_fitness**
 - Запускаємо локальний сервер використовуючи команду
 > **python manage.py runserver**
-# <a id="title7">Структура</a>
+
 ::: mermaid
 graph TD;
     Django_diploma-->kids_fitnes;
