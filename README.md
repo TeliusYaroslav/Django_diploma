@@ -6,6 +6,7 @@
 #### [Переваги](#title5)
 #### [Технології / Technologie](#title2)
 #### [Використання / launch of the project](#title3)
+#### [Структура](#title7)
 #### [Основні Функції / main functions](#title4)
 
 
@@ -71,6 +72,62 @@
 > **cd kids_fitness**
 - Запускаємо локальний сервер використовуючи команду
 > **python manage.py runserver**
+# <a id="title7">Структура</a>
+::: mermaid
+graph TD;
+    Django_diploma-->kids_fitnes;
+    Django_diploma---->readme_img;
+    Django_diploma---->README.md;
+    kids_fitnes-->kids_fitness;
+    kids_fitnes----->kids_fitness_app;
+    kids_fitnes-->db.sqlite3
+    kids_fitnes-->manage.py
+    kids_fitness_app--->__pycache__2
+    kids_fitness_app--->migrations
+    kids_fitness_app----->static/kids_fitness_app
+
+
+    static/kids_fitness_app----->css
+    css--->about_us.css
+    css--->base_buttons.css
+    css--->base.css
+    css--->check_in.css
+    css--->contact.css
+    css--->gallery.css
+    css--->login_main.css
+    css--->login.css
+    css--->main.css
+    css--->registration.css
+    css--->service.css
+    css--->sign_up.css
+    static/kids_fitness_app-->img
+    static/kids_fitness_app-->js
+    js--->gallery.js
+    js--->register_main.js
+    kids_fitness_app---->templates\kids_fitness_app
+    kids_fitness_app--->__init__2.py
+    kids_fitness_app--->admin.py
+    kids_fitness_app--->apps.py
+    kids_fitness_app--->models.py
+    kids_fitness_app--->test.py
+    kids_fitness_app--->views.py
+    templates\kids_fitness_app--->about_us.html
+    templates\kids_fitness_app--->base.html
+    templates\kids_fitness_app--->contacts.html
+    templates\kids_fitness_app--->gallery.html
+    templates\kids_fitness_app--->login.html
+    templates\kids_fitness_app--->main.html
+    templates\kids_fitness_app--->register.html
+    templates\kids_fitness_app--->service.html
+    templates\kids_fitness_app--->sign_up.html
+    kids_fitness--->__pycache__;
+    kids_fitness--->__init__.py;
+    kids_fitness--->asgi.py;
+    kids_fitness--->settings.py
+    kids_fitness--->urls.py
+    kids_fitness--->wsgi.py
+:::
+
 ## <a id="title4">Основні Функції / main functions</a>
 #### views.py
 - **Функція відправлення запису на заняття**
@@ -432,64 +489,3 @@ ID відіграє важливу роль у базах даних, викон
 
 ___
 
-::: mermaid
-graph TD;
-    Django_diploma-->kids_fitnes;
-    Django_diploma---->readme_img;
-    Django_diploma---->README.md;
-    kids_fitnes-->kids_fitness;
-    kids_fitnes----->kids_fitness_app;
-    kids_fitnes-->db.sqlite3
-    kids_fitnes-->manage.py
-    kids_fitness_app--->__pycache__2
-    kids_fitness_app--->migrations
-    kids_fitness_app----->static/kids_fitness_app
-
-
-    static/kids_fitness_app----->css
-    css--->about_us.css
-    css--->base_buttons.css
-    css--->base.css
-    css--->check_in.css
-    css--->contact.css
-    css--->gallery.css
-    css--->login_main.css
-    css--->login.css
-    css--->main.css
-    css--->registration.css
-    css--->service.css
-    css--->sign_up.css
-
-
-
-
-
-
-    static/kids_fitness_app-->img
-    static/kids_fitness_app-->js
-    js--->gallery.js
-    js--->register_main.js
-
-    kids_fitness_app---->templates\kids_fitness_app
-    kids_fitness_app--->__init__2.py
-    kids_fitness_app--->admin.py
-    kids_fitness_app--->apps.py
-    kids_fitness_app--->models.py
-    kids_fitness_app--->test.py
-    kids_fitness_app--->views.py
-    templates\kids_fitness_app--->about_us.html
-    templates\kids_fitness_app--->base.html
-    templates\kids_fitness_app--->contacts.html
-    templates\kids_fitness_app--->gallery.html
-    templates\kids_fitness_app--->login.html
-    templates\kids_fitness_app--->main.html
-    templates\kids_fitness_app--->register.html
-    templates\kids_fitness_app--->service.html
-    templates\kids_fitness_app--->sign_up.html
-    kids_fitness--->__pycache__;
-    kids_fitness--->__init__.py;
-    kids_fitness--->asgi.py;
-    kids_fitness--->settings.py
-    kids_fitness--->urls.py
-    kids_fitness--->wsgi.py
-:::
